@@ -37,43 +37,45 @@ numInt = +numInt;
 
 if (numInt > 0 && numIntLength === 1) {
   alert(`Число ${numInt} однозначное положительное`);
+
 } else if (numInt > 0 && numIntLength === 2) {
   alert(`Число ${numInt} двузначное положительное`);
+
 } else if (numInt > 0 && numIntLength === 3) {
   alert(`Число ${numInt} трехзначное положительное`);
+
 } else if (numInt < 0 && numIntLength === 2) {
   alert(`Число ${numInt} однозначное отрицательное`);
+
 } else if (numInt < 0 && numIntLength === 3) {
   alert(`Число ${numInt} двузначное отрицательное`);
+
 } else if (numInt < 0 && numIntLength === 4) {
   alert(`Число ${numInt} трехзначное отрицательное`);
 }
 
 // Task#4
 
-let num1 = +prompt(
-  "Введите первое число, \n если число не введено, оно приравнивается к 0"
+let num1 = +prompt("Введите первое число, \n если число не введено, оно приравнивается к 0"
 );
-let num2 = +prompt(
-  "Введите второе число, \n если число не введено, оно приравнивается к 0"
+let num2 = +prompt("Введите второе число, \n если число не введено, оно приравнивается к 0"
 );
-let num3 = +prompt(
-  "Введите третье число, \n если число не введено, оно приравнивается к 0"
+let num3 = +prompt("Введите третье число, \n если число не введено, оно приравнивается к 0"
 );
 
 if (num1 > num2 && num1 > num3) {
   alert(`${num1} больше, чем остальные два числа`);
+
 } else if (num2 > num1 && num2 > num3) {
   alert(`${num2} больше, чем остальные два числа`);
+
 } else if (num3 > num1 && num3 > num2) {
   alert(`${num3} больше, чем остальные два числа`);
+
 } else if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
   alert("Ошибка, Вы ввели не число");
-} else if (
-  num1 === 0 ||
-  num2 === 0 ||
-  num3 === 0 ||
-  (num1 === num2 && num2 === num3)
+
+} else if (num1 === 0 || num2 === 0 || num3 === 0 || (num1 === num2 && num2 === num3)
 ) {
   alert("Все числа равны");
 }
@@ -90,6 +92,7 @@ let sumSidesBC = sideB + sideC;
 
 if (sumSidesAB > sideC && sumSidesAC > sideB && sumSidesBC > sideA) {
   alert("Верно, такой треугольник может быть");
+
 } else {
   alert("Увы, треугольник не выйдет, сумма 2-х его сторон меньше 3-ей");
 }
